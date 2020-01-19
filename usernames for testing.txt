@@ -7,9 +7,9 @@ Password: password
 
 
 ADMIN:
-Username: Dhashin
-Password: omgomglol
+Username: Admin
+Password: admin
 
 CLERK:
-Username: Ahmed
-Password: zingerburger
+Username: Clerk
+Password: clerk
