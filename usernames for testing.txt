@@ -1,0 +1,15 @@
+CUSTOMERS:
+Username: Jack
+Password: frosty
+
+Username: Becky
+Password: password
+
+
+ADMIN:
+Username: Dhashin
+Password: omgomglol
+
+CLERK:
+Username: Ahmed
+Password: zingerburger

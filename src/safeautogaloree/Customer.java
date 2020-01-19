@@ -14,18 +14,53 @@ import java.io.*;
 public class Customer implements Serializable{
     private String firstName;
     private String lastName;
+    private String username;
+    private String password;
     private String address;
-    private int phoneNumber;
+    private String phoneNumber;
     private String email;
     private String drivingLicense;
+    private double funds;
 
-    public Customer(String firstName, String lastName, String address, int phoneNumber, String email, String drivingLicense) {
+    public Customer(String firstName, String lastName, String username, String password, String address, String phoneNumber, String email, String drivingLicense, double funds) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.username = username;
+        this.password = password;
         this.address = address;
         this.phoneNumber = phoneNumber;
         this.email = email;
         this.drivingLicense = drivingLicense;
+        this.funds = funds;
+    }
+    
+    public boolean equal(String username, String password){
+        return (this.username.equals(username) && 
+                this.password.equals(password));
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public double getFunds() {
+        return funds;
+    }
+
+    public void setFunds(double funds) {
+        this.funds = funds;
     }
 
     public String getAddress() {
@@ -52,11 +87,11 @@ public class Customer implements Serializable{
         this.lastName = lastName;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 

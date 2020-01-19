@@ -16,7 +16,7 @@ public class SafeAutoGaloree {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        new CustomerAdd().setVisible(true);
+        new Login().setVisible(true);
     }
     
 }
